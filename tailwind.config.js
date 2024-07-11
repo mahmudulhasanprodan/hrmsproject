@@ -15,10 +15,12 @@ export default {
       colors: {
         HeaderColor: "var(--HeaderColor)",
         SideVarColorOne: "var(--SideVarColorOne)",
+        SideVarColorTwo: "var(--SideVarColorTwo)",
         HoverColor: "var(--HoverColor)",
         DropDownColor: "var(--DropDownColor)",
         BtnColorOne: "var(--BtnColorOne)",
         BtnColorTwo: "var(--BtnColorTwo)",
+        CommonColor: "var(--CommonColor)",
       },
     },
   },

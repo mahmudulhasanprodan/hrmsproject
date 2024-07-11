@@ -5,10 +5,16 @@ import HomepageRight from '../../HomepageComponent/HomepageRight'
 const Home = () => {
   return (
     <>
-      <HomepageLeft />
-      <HomepageRight />
+      <div>
+        <div>
+          <div className="flex overflow-y-hidden">
+            <HomepageLeft className="w-1/6"/>
+            <HomepageRight className="w-5/6"/>
+          </div>
+        </div>
+      </div>
     </>
-  )
+  );
 }
 
 export default Home
