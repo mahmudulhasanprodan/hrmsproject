@@ -21,6 +21,7 @@ export default {
         BtnColorOne: "var(--BtnColorOne)",
         BtnColorTwo: "var(--BtnColorTwo)",
         CommonColor: "var(--CommonColor)",
+        HoverDropdown: "var(--HoverDropdown)",
       },
     },
   },

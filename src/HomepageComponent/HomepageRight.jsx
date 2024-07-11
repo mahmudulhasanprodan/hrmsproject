@@ -5,9 +5,9 @@ const HomepageRight = ({className}) => {
   return (
     <>
       <div className={className}>
-        <div className="py-6 bg-HeaderColor">
-          <div className="w-10 h-10 bg-BtnColorOne rounded flex items-center justify-center ml-10 cursor-pointer">
-            <FaBars className="text-CommonColor text-2xl " />
+        <div className="pt-3 h-14 bg-HeaderColor w-full">
+          <div className="w-6 h-6 bg-BtnColorOne rounded flex items-center justify-center ml-6 cursor-pointer">
+            <FaBars className="text-CommonColor text-sm" />
           </div>
         </div>
       </div>

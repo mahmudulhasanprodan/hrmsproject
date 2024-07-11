@@ -6,10 +6,10 @@ const Catagories = ({className, Usericon, ArrowIcon,title}) => {
       <div className={className}>
         <div className="flex items-center justify-between cursor-pointer">
           <div className="flex gap-x-3 items-center">
-            <div className="font-bold text-lg text-CommonColor">
+            <div className="font-bold text-xs text-CommonColor">
               {Usericon ? Usericon : "Icon Missing"}
             </div>
-            <h2 className=" font-OpenSans tracking-wider text-base font-semibold leading-5 text-CommonColor">
+            <h2 className=" font-OpenSans tracking-wider text-sm font-semibold leading-5 text-CommonColor">
               {title ? title : "Employee Info"}
             </h2>
           </div>
