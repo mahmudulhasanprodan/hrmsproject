@@ -3,7 +3,7 @@ import Catagories from './Catagories';
 import { EmployeeInfoData } from '../../Data/JasonData.jsx';
 import { HandleleftItem } from '../Pages/Home/Home.jsx';
 
-console.log(EmployeeInfoData);
+
 
 
 
@@ -41,25 +41,29 @@ const HomepageLeft = ({className}) => {
                 <div className="relative">
                   <div
                     key={item.id}
-                    className="py-3 font-bold text-lg pl-4 hover:bg-HoverColor hover:text-HoverDropdown"
+                    className={`py-3 font-bold text-lg pl-4 hover:bg-HoverColor hover:text-HoverDropdown ${
+                      Showcollapse[index] && "bg-HoverColor text-HoverDropdown"
+                    }`}
                     onClick={() => CollapseIcon(index)}
                   >
                     <h2>{item.iconOne ? item.iconOne : "Icon Missing"}</h2>
-                  </div>
-                  <div className="absolute">
-                    {Showcollapse[index] &&
-                      item.subcatagories.map((subitem) => (
-                        <div className="ml-20 bg-black flex flex-col w-48 py-4 -mt-[42px]">
-                          <div
-                            key={subitem.id}
-                            className="hover:bg-HoverColor pl-4"
-                          >
-                            <h2 className=" py-2 font-OpenSans tracking-wider text-[11px] font-semibold leading-5 text-CommonColor hover:text-HoverDropdown">
-                              {subitem.InfoData}
-                            </h2>
+                    <div className="absolute top-0">
+                      {Showcollapse[index] &&
+                        item.subcatagories.map((subitem) => (
+                          <div>
+                            <div
+                              className="ml-16  bg-black hover:bg-blue-600 flex flex-col w-48"
+                              key={subitem.id}
+                            >
+                              <div className="pl-4">
+                                <h2 className="py-2 font-OpenSans tracking-wider text-[11px] font-semibold leading-5 text-CommonColor">
+                                  {subitem.InfoData}
+                                </h2>
+                              </div>
+                            </div>
                           </div>
-                        </div>
-                      ))}
+                        ))}
+                    </div>
                   </div>
                 </div>
               ))}
