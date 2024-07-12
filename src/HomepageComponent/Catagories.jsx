@@ -51,7 +51,7 @@ const Catagories = ({ItemData}) => {
                   item.subcatagories.map((subitem) => (
                     <div
                       key={subitem.id}
-                      className="pl-12 bg-DropDownColor  hover:bg-HoverColor"
+                      className="pl-11 bg-DropDownColor  hover:bg-HoverColor"
                     >
                       <h2 className="py-2 font-OpenSans tracking-wider text-[11px] font-semibold leading-5 text-CommonColor hover:text-HoverDropdown">
                         {subitem.InfoData}

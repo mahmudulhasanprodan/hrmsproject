@@ -1,8 +1,21 @@
+
+///React Icom Import
+
 import { FaUser } from "react-icons/fa";
 import { FaEdit } from "react-icons/fa";
 import { FaRegHandPointRight } from "react-icons/fa";
 import { FaMoneyBillAlt } from "react-icons/fa";
 import { AiOutlineBars } from "react-icons/ai";
+
+// Login Background image import Here 
+import ImgOne from "../src/assets/LoginBackgroundImage/bg-01.jpg"
+import ImgTwo from "../src/assets/LoginBackgroundImage/bg-02.jpeg"
+import ImgThree from "../src/assets/LoginBackgroundImage/bg-03.jpg"
+import ImgFour from "../src/assets/LoginBackgroundImage/bg-05.jpeg"
+import ImgFive from "../src/assets/LoginBackgroundImage/bg-06.jpg"
+import ImgSix from "../src/assets/LoginBackgroundImage/bg-07.jpeg"
+
+// Login Background image import Here 
 
 export const EmployeeInfoData = [
   {
@@ -52,5 +65,14 @@ export const EmployeeInfoData = [
     iconOne: <FaRegHandPointRight />,
     subcatagories: [{ id: 1, InfoData: "HRMS User Manual" }],
   },
+];
+
+export const LoginBacground = [
+  { id: 1, Image: ImgOne },
+  { id: 2, Image: ImgTwo },
+  { id: 3, Image: ImgThree },
+  { id: 4, Image: ImgFour },
+  { id: 5, Image: ImgFive },
+  { id: 6, Image: ImgSix },
 ];
 

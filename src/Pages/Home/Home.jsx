@@ -20,11 +20,11 @@ const Home = () => {
 
   return (
     <>
-      <div>
+      <div className="h-[100vh] overflow-y-hidden">
         <div>
           <div className="flex">
             <HandleleftItem.Provider value={CollapsItem}>
-              <HomepageLeft className={`${CollapsItem ? "transition-all duration-500 w-[6%] z-0" : "transition-all duration-500  w-1/5"}`} />
+              <HomepageLeft className={`${CollapsItem ? "transition-all duration-200 w-[6%] z-0" : "transition-all duration-200  w-1/5"}`} />
             </HandleleftItem.Provider>
             <HomepageRight className={`${CollapsItem ? "w-full" : "w-full"}`} ItemCollapse={Handlecollapse} />
           </div>

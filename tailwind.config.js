@@ -23,6 +23,12 @@ export default {
         CommonColor: "var(--CommonColor)",
         HoverDropdown: "var(--HoverDropdown)",
       },
+
+      dropShadow: {
+        boxshadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px",
+        shadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px",
+        inputshadow: "rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px", 
+      }
     },
   },
   plugins: [],
